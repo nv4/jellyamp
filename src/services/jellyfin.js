@@ -104,8 +104,8 @@ const JellyfinService = {
   },
   getFavorites: async () => {
     const params = {
-      SortBy:	'SortName',
-      SortOrder: 'Ascending',
+      SortBy:	'DateCreated',
+      SortOrder: 'Descending',
       IncludeItemTypes: 'Audio',
       Recursive: true,
       IsFavorite: true,

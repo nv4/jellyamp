@@ -1,4 +1,4 @@
-import {v4 as uuidv4 } from 'uuid';
+soimport {v4 as uuidv4 } from 'uuid';
 import _ from 'lodash';
 
 import {getItemOrDefault, setItem} from './localstorage';
@@ -73,8 +73,8 @@ const JellyfinService = {
   },
   getAlbums: async () => {
     const params = {
-      SortBy:	'SortName',
-      SortOrder: 'Ascending',
+      SortBy:	'DateCreated',
+      SortOrder: 'Descending',
       IncludeItemTypes: 'MusicAlbum',
       Recursive: true,
     };
@@ -104,8 +104,8 @@ const JellyfinService = {
   },
   getFavorites: async () => {
     const params = {
-      SortBy:	'DateCreated',
-      SortOrder: 'Descending',
+      SortBy:	'SortName',
+      SortOrder: 'Ascending',
       IncludeItemTypes: 'Audio',
       Recursive: true,
       IsFavorite: true,

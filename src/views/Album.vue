@@ -30,7 +30,7 @@
               <b-icon v-if="player.player" level-item size="is-medium" icon="needle" class="pointer"></b-icon>
             </div>
           </b-tooltip>
-          <b-tooltip label="Inject Album Songs to current queue" position="is-left" v-if="album && album.songs && album.songs.length" style="margin-left: 10px;">
+          <b-tooltip label="Append Album Songs to current queue" position="is-left" v-if="album && album.songs && album.songs.length" style="margin-left: 10px;">
             <div @click="playSongs(false, false, true)">
               <b-icon v-if="player.player" level-item size="is-medium" icon="playlist-plus" class="pointer"></b-icon>
             </div>

@@ -3,6 +3,7 @@ appId: me.ipson.jellyamp
 compression: normal
 
 mac:
+  artifactName: ${name}-${version}-mac-${arch}.${ext}
   category: Audio
   icon: ./icons/icon.icns
   target:
